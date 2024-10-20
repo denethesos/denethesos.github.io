@@ -160,10 +160,8 @@ nav.menu_mobile h2:active {
 	width: 100%;
 	margin-bottom: 30px;
 	}
-	nav.menu_desktop{display: none;}
-	nav.menu_mobile{
-		display: block;
-	}
+	nav.menu_desktop{display: none !important;}
+	nav.menu_mobile{display: block !important;}
 	header h1{
 		font-size: 15pt;
 	}
