@@ -1,0 +1,105 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body  {
+    background-color:#0e0e0e
+}
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding:0 2%;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly with spaces in between */
+    align-items: center;         /* Vertically align items to the center */
+}
+
+.w60{
+	width: 60%;
+	float: left;
+}
+
+.w40{
+	width: 40%;
+	float: left;
+}
+
+.w50{
+	width: 50%;
+	float: left;
+}
+
+.w33{
+	flex:1;
+	float: left;
+	width: 33.3%;
+}
+
+.logo_center {
+    display: flex;
+    justify-content: center; /* Center logo horizontally within its container */
+}
+
+.main{
+	color: #fff;
+	margin:10px 0 10px 0;
+
+}
+.center{text-align: center;}
+
+.clear{clear: both;}
+
+/*Classes do meu site*/
+header{
+	padding: px 0;
+	background: conic-gradient(#000 0deg, #000 217.5deg, #fff 217.5deg, #fff 322.5deg, #000 322.5deg);
+}
+
+footer{
+	padding: 10px 0;
+	background-color: #fff;
+}
+
+footer  a{
+	text-decoration: none;
+	color:#000
+}
+header h1{
+    color: #000
+}
+
+nav.menu_desktop{
+	float: right;
+}
+
+nav.menu_desktop ul{
+	position: relative;
+	top: 0px;
+}
+
+nav.menu_desktop li{
+	padding:0 0px;
+	font-weight: lighter;
+	display: inline-block;
+}
+
+nav.menu_desktop li a{
+	height: 80px;
+	padding:30px 10px;
+	display: flex;
+	color: #fbfbfb;
+	text-decoration: none;
+	transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect for smooth color changes */
+}
+
+nav.menu_desktop a:hover{
+	background-color: #fff;
+    color: #000;}
+
+nav.menu_desktop a:active {
+    background-color: #000;
+    color: #fff;
+}
