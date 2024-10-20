@@ -55,6 +55,7 @@ body  {
 /*Classes do meu site*/
 header{
 	padding: px 0;
+	height: 60px;
 	background: conic-gradient(#000 0deg, #000 217.5deg, #fff 217.5deg, #fff 322.5deg, #000 322.5deg);
 }
 
@@ -65,10 +66,49 @@ footer{
 
 footer  a{
 	text-decoration: none;
-	color:#000
+	color:#000;
 }
 header h1{
-    color: #000
+    color: #000;
+	font-size: 18pt;
+}
+
+nav.menu_mobile{
+	display:none;
+	float:right;
+}
+
+nav.menu_mobile h2{
+	height: 60px;
+	padding: 15px 10px;
+	cursor: pointer;
+	color:#fff;
+	transition: background-color 0.1s ease, color 0.1s ease; /* Add transition effect for smooth color changes */
+}
+nav.menu_mobile ul{
+	display: none;
+	width: 100%;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	z-index: 999;
+	text-align: center;
+}
+
+nav.menu_mobile li{
+	padding:8px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.menu_mobile li.selected{
+	background: rgb(225,225,225);
+}
+
+nav.menu_mobile a{
+	display: block;
+	color: black;
+	text-decoration: none;
 }
 
 nav.menu_desktop{
@@ -87,12 +127,12 @@ nav.menu_desktop li{
 }
 
 nav.menu_desktop li a{
-	height: 80px;
-	padding:30px 10px;
+	height: 60px;
+	padding:20px 10px;
 	display: flex;
 	color: #fbfbfb;
 	text-decoration: none;
-	transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect for smooth color changes */
+	transition: background-color 0.1s ease, color 0.1s ease; /* Add transition effect for smooth color changes */
 }
 
 nav.menu_desktop a:hover{
@@ -102,4 +142,32 @@ nav.menu_desktop a:hover{
 nav.menu_desktop a:active {
     background-color: #000;
     color: #fff;
+}
+
+nav.menu_mobile h2:hover{
+	background-color: #fff;
+    color: #000;}
+
+nav.menu_mobile h2:active {
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px){
+	.card-text{width: 100%;}
+	.equipe-circle-single{
+	padding: 0 8px;
+	width: 100%;
+	margin-bottom: 30px;
+	}
+	nav.menu_desktop{display: none;}
+	nav.menu_mobile{
+		display: block;
+	}
+	header h1{
+		font-size: 15pt;
+	}
+	.card-single{
+		padding:10px;
+	}
 }
